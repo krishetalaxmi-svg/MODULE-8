@@ -27,10 +27,26 @@ To write a Python program to:
 
 ## 💻  Program
 
-Add Code Here
+    n = int(input())
+    records = []
+    
+    for i in range(n):
+        name = input()
+        grade = float(input())
+        records.append([name, grade])
+    
+    grades = sorted({grade for name, grade in records})
+    second_lowest = grades[1]
+    
+    names = [name for name, grade in records if grade == second_lowest]
+    names.sort()
+    
+    for name in names:
+        print(name)
 
 ## Output
+<img width="619" height="627" alt="image" src="https://github.com/user-attachments/assets/443d8970-e38b-4aee-beb3-53dfc99e67d3" />
 
 ## Result
-
+Thus, the program is verified successfully
 
